@@ -1,3 +1,40 @@
-section {
-    text-align: center;
+main.main-banner {
+    width           : 100%;
+    height          : 100vh;
+    display         : flex;
+    justify-content : center;
+    flex-direction  : column;
+    align-items     : center;
+    background-image: linear-gradient(-180deg, #060225, #0F0340);
+
+
+    @keyframes float {
+        0% {
+            filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.6));
+            transform : translatey(0px);
+        }
+
+        50% {
+            filter: drop-shadow(0 25px 15px rgba(0, 0, 0, 0.2));
+            transform : translatey(-20px);
+        }
+
+        100% {
+            filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.6));
+            transform : translatey(0px);
+        }
+    }
+
+    div.principal {
+        transform: translatey(0px);
+        animation: float 6s ease-in-out infinite;
+
+        div.name {
+            text-transform: uppercase;
+            font-weight   : 700;
+            font-size     : 5em;
+            text-shadow   : 2px 4px 20px #924DF9;
+            color         : #fff;
+        }
+    }
 }

@@ -1,16 +1,18 @@
 
 import Header from './header';
 import Footer from './footer';
-
-
 const Home = () => {
     return (
+
         <div className="App">
             {/* Aqui renderiza o Header */}
             {/* <Header /> */}
             {/* Aqui renderiza a Home */}
             <section>
                 <main className="main-banner">
+                    <div className="icon">
+                        <img className="icon-img" />
+                    </div>
                     <div className="principal">
                         <div className="name">
                             Pedro
@@ -20,17 +22,17 @@ const Home = () => {
                         </div>
                     </div>
 
-                <div className="secundario">
-                    <div className="text">
-                        Programador
+                    <div className="secundario">
+                        <div className="text">
+                            Programador
                     </div>
-                </div>
+                    </div>
                 </main>
             </section>
 
             {/* Aqui renderiza o Footer */}
             {/* <Footer /> */}
-        </div>
+        </div >
     );
 }
 export default Home; 

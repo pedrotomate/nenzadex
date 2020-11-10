@@ -7,34 +7,108 @@ main.main-banner {
     align-items     : center;
     background-image: linear-gradient(-180deg, #060225, #0F0340);
 
-
-    @keyframes float {
+    @keyframes iconFloat {
         0% {
-            filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.6));
+            box-shadow: 0 5px 15px 0px rgba(146, 77, 249, 0.6);
             transform : translatey(0px);
         }
 
         50% {
-            filter: drop-shadow(0 25px 15px rgba(0, 0, 0, 0.2));
+            box-shadow: 0 25px 15px 0px rgba(146, 77, 249, 0.2);
             transform : translatey(-20px);
         }
 
         100% {
-            filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.6));
+            box-shadow: 0 5px 15px 0px rgba(146, 77, 249, 0.6);
             transform : translatey(0px);
+        }
+    }
+
+    @keyframes fallen1 {
+        0% {
+            bottom: 0;
+            left  : 0;
+        }
+
+        10% {
+            bottom: 50%;
+            left  : 50%;
+        }
+
+        100% {
+            bottom: 100%;
+            left  : 100%;
+        }
+    }
+
+    @keyframes float {
+        0% {
+            filter   : drop-shadow(2px 4px 5px rgba(146, 77, 249, 0.6));
+            transform: translatey(0px);
+        }
+
+        50% {
+            filter   : drop-shadow(0 15px 15px rgba(146, 77, 249, 0.2));
+            transform: translatey(-20px);
+        }
+
+        100% {
+            filter   : drop-shadow(2px 4px 5px rgba(146, 77, 249, 0.6));
+            transform: translatey(0px);
+        }
+    }
+
+    div.icon {
+        width           : 150px;
+        height          : 150px;
+        box-sizing      : border-box;
+        border          : 5px white solid;
+        border-radius   : 50%;
+        overflow        : hidden;
+        box-shadow      : 0 5px 15px 0px rgba(146, 77, 249, 0.6);
+        transform       : translatey(0px);
+        background-color: #000;
+        animation       : iconFloat 6s ease-in-out infinite;
+        margin-bottom   : 30px;
+        position        : relative;
+
+        &:before {
+            content         : "";
+            height          : 3px;
+            width           : 3px;
+            background-color: #fff;
+            position        : absolute;
+            transform       : translateY(0px) translateX(0px);
+            bottom          : 0;
+            left            : 0;
+            animation       : fallen1 1s linear infinite;
+
+        }
+
+
+        img {
+            width              : 150px;
+            height             : 150px;
+            background-image   : url(../img/profile/meteor.png);
+            background-position: center center;
+            background-size    : 80px 80px;
+            background-repeat  : no-repeat;
+            position           : relative;
+            z-index            : 10;
         }
     }
 
     div.principal {
         transform: translatey(0px);
-        animation: float 6s ease-in-out infinite;
+        animation: float 3s ease-in-out infinite;
 
         div.name {
             text-transform: uppercase;
             font-weight   : 700;
             font-size     : 5em;
-            text-shadow   : 2px 4px 20px #924DF9;
+            text-shadow   : 2px 4px 5px #924df9;
             color         : #fff;
+            font-family   : 'Goldman Regular', sans-serif;
         }
     }
 }

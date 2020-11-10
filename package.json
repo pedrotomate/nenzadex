@@ -1,5 +1,5 @@
 {
-  "name": "pokedex",
+  "name": "nenzadex",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pedrotomate/pokedex.git"
+    "url": "git+https://github.com/pedrotomate/nenzadex.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/pedrotomate/pokedex/issues"
+    "url": "https://github.com/pedrotomate/nenzadex/issues"
   },
-  "homepage": "https://github.com/pedrotomate/pokedex#readme",
+  "homepage": "https://github.com/pedrotomate/nenzadex#readme",
   "dependencies": {
     "next": "^10.0.1",
     "react": "^17.0.1",

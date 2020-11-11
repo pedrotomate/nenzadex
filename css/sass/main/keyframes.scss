@@ -1,0 +1,112 @@
+
+    @keyframes iconFloat {
+        0% {
+            box-shadow: 0 5px 15px 0px rgba(146, 77, 249, 0.6);
+        }
+
+        50% {
+            box-shadow: 0 25px 15px 0px rgba(146, 77, 249, 0.2);
+        }
+
+        100% {
+            box-shadow: 0 5px 15px 0px rgba(146, 77, 249, 0.6);
+        }
+    }
+
+    @keyframes imgFall {
+        0% {
+            filter             : drop-shadow(8px -8px 6px rgba(12, 240, 235, 0.6));
+            background-position: 50% 50%;
+        }
+
+        25% {
+            filter             : drop-shadow(20px -20px 20px rgba(12, 240, 235, 0.8));
+            background-position: 30% 20%;
+        }
+
+        50% {
+            filter             : drop-shadow(8px -8px 6px rgba(12, 240, 235, 0.6));
+            background-position: 50% 50%;
+        }
+
+        75% {
+            filter             : drop-shadow(20px -20px 20px rgba(12, 240, 235, 0.8));
+            background-position: 60% 80%;
+        }
+
+        100% {
+            filter             : drop-shadow(8px -8px 6px rgba(12, 240, 235, 0.6));
+            background-position: 50% 50%;
+        }
+    }
+
+    @keyframes fallen1 {
+        0% {
+            bottom: 0;
+            left  : 0;
+        }
+
+        40% {
+            bottom: 100%;
+            left  : 100%;
+        }
+
+        45% {
+            bottom: 100%;
+            left  : 0;
+        }
+
+        50% {
+            bottom: 60px;
+            left  : 0;
+        }
+
+        100% {
+            bottom: calc(100% + 30px);
+            left  : 100%;
+        }
+    }
+
+
+
+    @keyframes fallen2 {
+        0% {
+            bottom: 0;
+            left  : 30px;
+        }
+
+        40% {
+            bottom: 100%;
+            left  : 100%;
+        }
+
+        45% {
+            bottom: 100%;
+            left  : 0;
+        }
+
+        50% {
+            bottom: 60px;
+            left  : 0;
+        }
+
+        100% {
+            bottom: calc(100% + 30px);
+            left  : 100%;
+        }
+    }
+
+
+    @keyframes float {
+        0% {
+            filter: drop-shadow(2px 4px 5px rgba(146, 77, 249, 0.6));
+        }
+
+        50% {
+            filter: drop-shadow(0 15px 15px rgba(146, 77, 249, 0.2));
+        }
+
+        100% {
+            filter: drop-shadow(2px 4px 5px rgba(146, 77, 249, 0.6));
+        }
+    }
